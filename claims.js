@@ -1,0 +1,328 @@
+const claims = [
+    // --- Claims for Prashanth Pathak (u1) ---
+    {
+      id: 'c1',
+      subjectId: 'u1',
+      subjectName: 'Prashanth Pathak',
+      date: '2025-08-15',
+      description: 'Routine checkup with family physician',
+      status: 'Approved',
+      amount: 150,
+    },
+    {
+      id: 'c2',
+      subjectId: 'u1',
+      subjectName: 'Prashanth Pathak',
+      date: '2025-07-20',
+      description: 'Emergency room visit for chest pain',
+      status: 'Pending',
+      amount: 2500,
+    },
+    {
+      id: 'c3',
+      subjectId: 'u1',
+      subjectName: 'Prashanth Pathak',
+      date: '2025-07-05',
+      description: 'Specialist consultation for cardiology',
+      status: 'Approved',
+      amount: 250,
+    },
+    {
+      id: 'c4',
+      subjectId: 'u1',
+      subjectName: 'Prashanth Pathak',
+      date: '2025-06-10',
+      description: 'Prescription refill for blood pressure medication',
+      status: 'Approved',
+      amount: 50,
+    },
+    {
+      id: 'c5',
+      subjectId: 'u1',
+      subjectName: 'Prashanth Pathak',
+      date: '2025-05-22',
+      description: 'Annual physical examination',
+      status: 'Approved',
+      amount: 120,
+    },
+    {
+      id: 'c6',
+      subjectId: 'u1',
+      subjectName: 'Prashanth Pathak',
+      date: '2025-04-18',
+      description: 'Physical therapy session',
+      status: 'Approved',
+      amount: 80,
+    },
+    {
+      id: 'c7',
+      subjectId: 'u1',
+      subjectName: 'Prashanth Pathak',
+      date: '2025-03-05',
+      description: 'Blood test for cholesterol levels',
+      status: 'Approved',
+      amount: 75,
+    },
+    {
+      id: 'c8',
+      subjectId: 'u1',
+      subjectName: 'Prashanth Pathak',
+      date: '2025-02-14',
+      description: 'Flu vaccination',
+      status: 'Approved',
+      amount: 30,
+    },
+    {
+      id: 'c9',
+      subjectId: 'u1',
+      subjectName: 'Prashanth Pathak',
+      date: '2025-01-20',
+      description: 'Vision examination',
+      status: 'Denied',
+      amount: 90,
+    },
+    {
+      id: 'c10',
+      subjectId: 'u1',
+      subjectName: 'Prashanth Pathak',
+      date: '2024-12-10',
+      description: 'Dental cleaning',
+      status: 'Approved',
+      amount: 100,
+    },
+    {
+      id: 'c11',
+      subjectId: 'u1',
+      subjectName: 'Prashanth Pathak',
+      date: '2024-11-25',
+      description: 'Chiropractic adjustment',
+      status: 'Approved',
+      amount: 60,
+    },
+  
+    // --- Claims for Dependent Ananya Pathak (d1) ---
+    {
+      id: 'c12',
+      subjectId: 'd1',
+      subjectName: 'Ananya Pathak',
+      date: '2025-08-10',
+      description: 'Gynecologist appointment',
+      status: 'Approved',
+      amount: 180,
+    },
+    {
+      id: 'c13',
+      subjectId: 'd1',
+      subjectName: 'Ananya Pathak',
+      date: '2025-06-25',
+      description: 'Dermatology consultation for skin rash',
+      status: 'Approved',
+      amount: 120,
+    },
+    {
+      id: 'c14',
+      subjectId: 'd1',
+      subjectName: 'Ananya Pathak',
+      date: '2025-05-15',
+      description: 'Physical therapy for knee pain',
+      status: 'Approved',
+      amount: 90,
+    },
+    {
+      id: 'c15',
+      subjectId: 'd1',
+      subjectName: 'Ananya Pathak',
+      date: '2025-04-02',
+      description: 'Mental health counseling session',
+      status: 'Approved',
+      amount: 110,
+    },
+    {
+      id: 'c16',
+      subjectId: 'd1',
+      subjectName: 'Ananya Pathak',
+      date: '2025-03-18',
+      description: 'Annual eye exam',
+      status: 'Approved',
+      amount: 75,
+    },
+  
+    // --- Claims for Dependent Aarav Pathak (d2) ---
+    {
+      id: 'c17',
+      subjectId: 'd2',
+      subjectName: 'Aarav Pathak',
+      date: '2025-08-01',
+      description: 'Pediatrician visit for fever',
+      status: 'Approved',
+      amount: 85,
+    },
+    {
+      id: 'c18',
+      subjectId: 'd2',
+      subjectName: 'Aarav Pathak',
+      date: '2025-07-10',
+      description: 'Routine vaccination',
+      status: 'Approved',
+      amount: 60,
+    },
+    {
+      id: 'c19',
+      subjectId: 'd2',
+      subjectName: 'Aarav Pathak',
+      date: '2025-06-05',
+      description: 'Allergy testing',
+      status: 'Pending',
+      amount: 300,
+    },
+    {
+      id: 'c20',
+      subjectId: 'd2',
+      subjectName: 'Aarav Pathak',
+      date: '2025-05-20',
+      description: 'Dental checkup',
+      status: 'Approved',
+      amount: 70,
+    },
+  
+    // --- Claims for Ravi Kumar (u2) ---
+    {
+      id: 'c21',
+      subjectId: 'u2',
+      subjectName: 'Ravi Kumar',
+      date: '2025-08-20',
+      description: 'Prescription refill for diabetes medication',
+      status: 'Approved',
+      amount: 50,
+    },
+    {
+      id: 'c22',
+      subjectId: 'u2',
+      subjectName: 'Ravi Kumar',
+      date: '2025-07-28',
+      description: 'Cardiology follow-up appointment',
+      status: 'Approved',
+      amount: 200,
+    },
+    {
+      id: 'c23',
+      subjectId: 'u2',
+      subjectName: 'Ravi Kumar',
+      date: '2025-06-15',
+      description: 'Routine blood work',
+      status: 'Approved',
+      amount: 75,
+    },
+    {
+      id: 'c24',
+      subjectId: 'u2',
+      subjectName: 'Ravi Kumar',
+      date: '2025-05-10',
+      description: 'Annual physical examination',
+      status: 'Approved',
+      amount: 120,
+    },
+    {
+      id: 'c25',
+      subjectId: 'u2',
+      subjectName: 'Ravi Kumar',
+      date: '2025-04-05',
+      description: 'Eye doctor visit',
+      status: 'Approved',
+      amount: 90,
+    },
+  
+    // --- Claims for Dependent Meera Kumar (d3) ---
+    {
+      id: 'c26',
+      subjectId: 'd3',
+      subjectName: 'Meera Kumar',
+      date: '2025-08-18',
+      description: 'Annual wellness exam',
+      status: 'Denied',
+      amount: 250,
+    },
+    {
+      id: 'c27',
+      subjectId: 'd3',
+      subjectName: 'Meera Kumar',
+      date: '2025-07-08',
+      description: 'Allergy testing',
+      status: 'Approved',
+      amount: 300,
+    },
+    {
+      id: 'c28',
+      subjectId: 'd3',
+      subjectName: 'Meera Kumar',
+      date: '2025-05-30',
+      description: 'Specialist consultation for endocrinology',
+      status: 'Approved',
+      amount: 220,
+    },
+  
+    // --- Claims for Neha Singh (u3) ---
+    {
+      id: 'c29',
+      subjectId: 'u3',
+      subjectName: 'Neha Singh',
+      date: '2025-08-22',
+      description: 'Routine checkup',
+      status: 'Approved',
+      amount: 150,
+    },
+    {
+      id: 'c30',
+      subjectId: 'u3',
+      subjectName: 'Neha Singh',
+      date: '2025-07-15',
+      description: 'Dermatology consultation',
+      status: 'Approved',
+      amount: 120,
+    },
+  
+    // --- Additional claims for existing users/dependents to reach 100+ ---
+    // Using a simple loop to generate more claims for variety
+  
+    ...Array.from({ length: 70 }, (_, i) => {
+      const claimId = `c${i + 31}`;
+      const subjectList = [
+        { id: 'u1', name: 'Prashanth Pathak' },
+        { id: 'd1', name: 'Ananya Pathak' },
+        { id: 'd2', name: 'Aarav Pathak' },
+        { id: 'u2', name: 'Ravi Kumar' },
+        { id: 'd3', name: 'Meera Kumar' },
+        { id: 'u3', name: 'Neha Singh' },
+      ];
+      const subject = subjectList[Math.floor(Math.random() * subjectList.length)];
+      const statusList = ['Approved', 'Pending', 'Denied'];
+      const status = statusList[Math.floor(Math.random() * statusList.length)];
+      const descriptionList = [
+        'Prescription refill',
+        'X-Ray imaging',
+        'Therapy session',
+        'Specialist consultation',
+        'General checkup',
+        'Follow-up appointment',
+        'Hospitalization stay',
+        'Lab test',
+        'Emergency visit',
+        'Mental health counseling',
+      ];
+      const description = descriptionList[Math.floor(Math.random() * descriptionList.length)];
+      const date = `2025-0${Math.floor(Math.random() * 9) + 1}-${Math.floor(Math.random() * 28) + 1}`;
+      const amount = Math.floor(Math.random() * 5000) + 50;
+  
+      return {
+        id: claimId,
+        subjectId: subject.id,
+        subjectName: subject.name,
+        date,
+        description,
+        status,
+        amount,
+      };
+    }),
+  ];
+  
+  export default claims;
